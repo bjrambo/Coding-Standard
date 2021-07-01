@@ -5,14 +5,21 @@
 
 이 코딩스탠다드를 굳이 따르지 않아도 되며 각자의 코딩규칙대로 코딩하시면 됩니다.
 
-###### 기본 설정
+## 코딩 스텐다드
 1. PHP, HTML, XML, CSS, JS등 모든 텍스트 파일의 문자색은 BOM이 없는 UTF-8으로 한다.
 2. 줄바꿈은 유닉스 방식(LF)을 따른다.
 3. 들여쓴 줄들의 사이의 빈줄도 들여쓴다.
 4. PHP코드로 이루어진 파일의 경우 맨끝 ?> PHP 닫는 코드를 넣지 않는다.
 5. 지역 변수 및 함수 매개 변수에는 낙타케이싱 기법으로 이름을 정한다.
-	* `public function getMemberInfoByMemberSrl($member_srl)`
-	* `public $memberPrivateData = null;`
+```php
+class Name
+{
+	public $memberPrivateData = null;
+	public function getMemberInfoByMemberSrl($member_srl)
+	{
+	}
+}
+```
 6. class 및 function 선언과 if, for, foreach, while 등의 중괄호는 다음 줄에 쓴다.
 ```php
 public function bar($foo)
