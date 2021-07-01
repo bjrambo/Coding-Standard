@@ -38,29 +38,29 @@ if ($someVariable === $someParameters)
 10. PHP에서 여러줄에 걸쳐 배열을 선언할 경우, 마지막 구성요소 뒤에 쉼표를 남긴다. 단 자바스크립트 및 Json에서는 마지막 쉼표를 반드시 삭제해야 한다. 이외 다른 언어에서는 마지막에 쉼표를 반드시 삭제한다.
 ```php
 $memberSrls = array(
-    '309',
-    '801',
-    '515',
+	'309',
+	'801',
+	'515',
 );
 ```
 11. switch문에는 항상 기본값이 있어야 한다.
 ```php
 switch ($expr)
 {
-    case 0:
-        echo 'First case, with a break';
-        break;
-    case 1:
-        echo 'Second case, which falls through';
-        // no break
-    case 2:
-    case 3:
-    case 4:
-        echo 'Third case, return instead of break';
-        return;
-    default:
-        echo 'Default case';
-        break;
+	case 0:
+		echo 'First case, with a break';
+		break;
+	case 1:
+		echo 'Second case, which falls through';
+		// no break
+	case 2:
+	case 3:
+	case 4:
+		echo 'Third case, return instead of break';
+		return;
+	default:
+		echo 'Default case';
+		break;
 }
 ```
 12. 주석은 관련 코드 윗줄에 써야한다.
